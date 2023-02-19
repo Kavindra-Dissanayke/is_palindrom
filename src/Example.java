@@ -13,6 +13,7 @@ class Example{
         for(int i=0; i<1000; i++){
             if(isPalindrome(i)){
                 System.out.println(i);
+                System.out.println();
             }
         }
     }
