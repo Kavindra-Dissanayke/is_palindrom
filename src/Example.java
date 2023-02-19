@@ -1,19 +1,19 @@
+import java.util.*;
 class Example{
-    public static boolean isPalindrome(int num){
-        int reverse=0;
-        int temp=num;
-        while(num!=0){
-            reverse=reverse*10;
-            reverse=reverse+num%10;
-            num/=10;
+    public static boolean isPrime(int num){
+        boolean isPrime=true;
+        for(int i=2; i<num; i++){
+            if(num%i==0){
+                isPrime=false;
+                break;
+            }
         }
-        return reverse==temp?true:false;
+        return isPrime;
     }
-    public static void main(String args[]){
-        for(int i=0; i<1000; i++){
-            if(isPalindrome(i)){
+    public static void main(String[] args) {
+        for(int i=2; i<=1000; i++){
+            if(isPrime(i)){
                 System.out.println(i);
-                System.out.println();
             }
         }
     }
