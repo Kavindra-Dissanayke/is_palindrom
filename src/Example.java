@@ -406,9 +406,9 @@ class Example {
 
     private static int findMin(int[] d) {
         int minn = d[0];
-        for (int i = 1; i < d.length; i++) {
-            if (d[i] < minn) {
-                minn = d[i];
+        for (int i :d) {
+            if (i< minn) {
+                minn = i;
             }
         }
         return minn;
@@ -422,32 +422,37 @@ class Example {
 
     public static void readMarks(int[] marks) {
         Random r = new Random();
-        for (int i = 0; i < marks.length; i++) {
-            marks[i] = r.nextInt(101);
+        for (int i=1;i<marks.length;i++) {
+           marks[i] = r.nextInt(101);
         }
         // System.out.println(Arrays.toString(marks));
     }
 
     public static int findTotal(int[] b) {
         int tot = 0;
-        for (int i = 0; i < b.length; i++) {
-            tot += b[i];
+        for (int i :b) {
+            tot += i;
         }
         return tot;
     }
 
     public static int findMax(int[] c) {
         int maxx = c[0];
-        for (int i = 1; i < c.length; i++) {
-            if (c[i] > maxx) {
-                maxx = c[i];
+        for (int i :c) {
+            if (i > maxx) {
+                maxx = i;
             }
         }
 
         return maxx;
     }
     public static void printMarks(int []e){
-        System.out.println(Arrays.toString(e));
+       // System.out.println(Arrays.toString(e));
+        System.out.print("[");
+        for (int x:e){
+            System.out.print(x+",");
+        }
+        System.out.println("\b\b]");
     }
 
 }
