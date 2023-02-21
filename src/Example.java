@@ -305,6 +305,86 @@ class Example{
 }
 */
 
+///*import java.util.*;
+//
+//class Example {
+//    public static void main(String[] args) {
+//        Scanner input = new Scanner(System.in);
+//        System.out.print("Input no of students : ");
+//        final int N = input.nextInt();
+//
+//        //1. Create an array to store student's marks, named "marks", size
+//        int[] marks = createAnArray(N);
+//
+//        //2. Read and store marks [Read random number 0 to 100]
+//        readMarks(marks);
+//
+//        //3. Find Total
+//        int total = findTotal(marks);
+//
+//        //4. Find max
+//        int max = findMax(marks);
+//
+//        //5. Find min
+//        int min = findMin(marks);
+//
+//
+//        //6. Print marks [45, 23,.....]
+//        printMarks(marks);
+//
+//        System.out.println("Total   : " + total);
+//        System.out.println("Maximum : " + max);
+//        System.out.println("Minimum : " + min);
+//    }
+//
+//    private static int findMin(int[] d) {
+//        int minn = d[0];
+//        for (int i = 1; i < d.length; i++) {
+//            if (d[i] < minn) {
+//                minn = d[i];
+//            }
+//        }
+//        return minn;
+//    }
+//
+//    public static int[] createAnArray(int n) {
+//     *//*   int y[]= new int[n];
+//        return y;*//*
+//        return new int[n];
+//    }
+//
+//    public static void readMarks(int[] marks) {
+//        Random r = new Random();
+//        for (int i = 0; i < marks.length; i++) {
+//            marks[i] = r.nextInt(101);
+//        }
+//        // System.out.println(Arrays.toString(marks));
+//    }
+//
+//    public static int findTotal(int[] b) {
+//        int tot = 0;
+//        for (int i = 0; i < b.length; i++) {
+//            tot += b[i];
+//        }
+//        return tot;
+//    }
+//
+//    public static int findMax(int[] c) {
+//        int maxx = c[0];
+//        for (int i = 1; i < c.length; i++) {
+//            if (c[i] > maxx) {
+//                maxx = c[i];
+//            }
+//        }
+//
+//        return maxx;
+//    }
+//    public static void printMarks(int []e){
+//        System.out.println(Arrays.toString(e));
+//    }
+//
+//}*/
+
 import java.util.*;
 
 class Example {
@@ -318,23 +398,10 @@ class Example {
 
         //2. Read and store marks [Read random number 0 to 100]
         readMarks(marks);
-
-        //3. Find Total
-        int total = findTotal(marks);
-
-        //4. Find max
-        int max = findMax(marks);
-
-        //5. Find min
-        int min = findMin(marks);
-
-
-        //6. Print marks [45, 23,.....]
         printMarks(marks);
-
-        System.out.println("Total   : " + total);
-        System.out.println("Maximum : " + max);
-        System.out.println("Minimum : " + min);
+        System.out.println("Total   : " + findTotal(marks));
+        System.out.println("Maximum : " + findMax(marks));
+        System.out.println("Minimum : " + findMin(marks));
     }
 
     private static int findMin(int[] d) {
@@ -384,5 +451,4 @@ class Example {
     }
 
 }
-
 
