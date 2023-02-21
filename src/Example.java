@@ -115,51 +115,49 @@
 //        System.out.println("Average : "+df.format(avg));
 //    }
 //}
-/*
-import java.util.*;
-class Example{
-    public static void main(String []args) {
-        Scanner input=new Scanner(System.in);
-        int[] a=new int[10];
-
-        //Read,input, store integers [0 to 100] Using Random numbers
-        Random r=new Random();
-        for (int i = 0; i < 10; i++){
-            a[i]=r.nextInt(101); //0 to 100
-        }
-
-        //Find total
-        int total=0;
-        for(int i=0; i<10; i++){
-            total+=a[i];
-        }
-
-        //find maximum
-        int max=a[9];
-        for(int i=0; i<10; i++){
-            if(a[i]>max){
-                max=a[i];
-            }
-        }
-        //find minimum
-        int min=a[8];
-        for(int i=0; i<10; i++){
-            if(a[i]<min){
-                min=a[i];
-            }
-        }
-        System.out.print("[");
-        for(int i=0; i<10; i++){
-            System.out.print(a[i]+", ");
-        }
-        System.out.println("\b\b]");
-        System.out.println("Total   : "+total);
-        System.out.println("Maximum : "+max);
-        System.out.println("Minimum : "+min);
-    }
-}
-*/
-
+//import java.util.*;
+//class Example{
+//    public static void main(String []args) {
+//        Scanner input=new Scanner(System.in);
+//        int[] a=new int[10];
+//
+//        //Read,input, store integers [0 to 100] Using Random numbers
+//        Random r=new Random();
+//        for (int i = 0; i < 10; i++){
+//            a[i]=r.nextInt(101); //0 to 100
+//        }
+//
+//        //Find total
+//        int total=0;
+//        for(int i=0; i<10; i++){
+//            total+=a[i];
+//        }
+//
+//        //find maximum
+//        int max=a[9];
+//        for(int i=0; i<10; i++){
+//            if(a[i]>max){
+//                max=a[i];
+//            }
+//        }
+//        //find minimum
+//        int min=a[8];
+//        for(int i=0; i<10; i++){
+//            if(a[i]<min){
+//                min=a[i];
+//            }
+//        }
+//        System.out.print("[");
+//        for(int i=0; i<10; i++){
+//            System.out.print(a[i]+", ");
+//        }
+//        System.out.println("\b\b]");
+//        System.out.println("Total   : "+total);
+//        System.out.println("Maximum : "+max);
+//        System.out.println("Minimum : "+min);
+//    }
+//}
+//
 //import java.util.*;
 //
 //class Example {
@@ -215,84 +213,176 @@ class Example{
 //        System.out.println("Minimum : " + min);
 //    }
 //}
+//import java.util.*;
+//class Example{
+//    public static void main(String []args){
+//        int[] xr={34,23,65,87,91,12,16,78,29,81,49};
+//        String s1=Arrays.toString(xr);
+//        System.out.println(s1);//[34,23,65,87,91,12,16,78,29,81,49]
+//
+//        Arrays.sort(xr);
+//        System.out.println(Arrays.toString(xr));//[12, 16, 23, 29, 34, 49, 65, 78, 81, 87, 91]
+//    }
+//}
+//import java.util.*;
+//class Example{
+//    public static void main(String []args){
+//        int[] xr={90,78,87,12,54,14,71,19,56,76};
+//      //  System.out.println(printArray(xr));   //[90,78,87,12,54,14,71,19,56,76]
+//        System.out.println( printArray(xr));
+//    }
+//    public static String printArray(int [] a){
+//      //  System.out.println(Arrays.toString(a));
+//
+//       return Arrays.toString(a);
+//    }
+//}
+//
+//import java.util.*;
+//class Example{
+//    public static void main(String []args){
+//        int[] xr={90,78,87,12,54,14,71,19,56,76};
+//        printArray(xr); //[90,78,87,12,54,14,71,19,56,76]
+//    }
+//    public  static void printArray(int a[]){
+//        System.out.print("[");
+//        for (int b:a){
+//            System.out.print(b+", ");
+//        }
+//        System.out.println("\b\b]");
+//    }
+//}
+//import java.util.*;
+//
+//class Example{
+//    public static void printArray(int [] xr){
+//        System.out.print("[");
+//        for (int i = 0; i < xr.length; i++){
+//            System.out.print(xr[i]+", ");
+//        }
+//        System.out.println("\b\b]");
+//    }
+//    public static void main(String []args){
+//        int[] xr={90,78,87,12,54,14,71,19,56,76};
+//        printArray(xr); //[90,78,87,12,54,14,71,19,56,76]
+//    }
+//}
+//import java.util.*;
+//class Example{
+//    public static void increment(int a, int b, int c, int d){
+//        a++;
+//        b++;
+//        c++;
+//        d++;
+//        System.out.println(a+","+b+","+","+c+","+d);
+//    }
+//    public static void main(String []args){
+//        int[] xr={100,200,300,400};
+//        System.out.println(Arrays.toString(xr));
+//
+//        increment(xr[0],xr[1],xr[2],xr[3]);
+//        System.out.println(Arrays.toString(xr));
+//    }
+//}
+//
+//
 /*
 import java.util.*;
 class Example{
-    public static void main(String []args){
-        int[] xr={34,23,65,87,91,12,16,78,29,81,49};
-        String s1=Arrays.toString(xr);
-        System.out.println(s1);//[34,23,65,87,91,12,16,78,29,81,49]
-
-        Arrays.sort(xr);
-        System.out.println(Arrays.toString(xr));//[12, 16, 23, 29, 34, 49, 65, 78, 81, 87, 91]
-    }
-}
-*/
-/*
-import java.util.*;
-class Example{
-    public static void main(String []args){
-        int[] xr={90,78,87,12,54,14,71,19,56,76};
-      //  System.out.println(printArray(xr));   //[90,78,87,12,54,14,71,19,56,76]
-        System.out.println( printArray(xr));
-    }
-    public static String printArray(int [] a){
-      //  System.out.println(Arrays.toString(a));
-
-       return Arrays.toString(a);
-    }
-}
-
-*/
-import java.util.*;
-/*class Example{
-    public static void main(String []args){
-        int[] xr={90,78,87,12,54,14,71,19,56,76};
-        printArray(xr); //[90,78,87,12,54,14,71,19,56,76]
-    }
-    public  static void printArray(int a[]){
-        System.out.print("[");
-        for (int b:a){
-            System.out.print(b+", ");
-        }
-        System.out.println("\b\b]");
-    }
-}*/
-/*
-import java.util.*;
-
-class Example{
-    public static void printArray(int [] xr){
-        System.out.print("[");
-        for (int i = 0; i < xr.length; i++){
-            System.out.print(xr[i]+", ");
-        }
-        System.out.println("\b\b]");
-    }
-    public static void main(String []args){
-        int[] xr={90,78,87,12,54,14,71,19,56,76};
-        printArray(xr); //[90,78,87,12,54,14,71,19,56,76]
-    }
-}
-*/
-import java.util.*;
-/*
-class Example{
-    public static void increment(int a, int b, int c, int d){
-        a++;
-        b++;
-        c++;
-        d++;
-        System.out.println(a+","+b+","+","+c+","+d);
+    public static void increment(int[] a){
+        a[0]++;
+        a[1]++;
+        a[2]++;
+        a[3]++;
     }
     public static void main(String []args){
         int[] xr={100,200,300,400};
         System.out.println(Arrays.toString(xr));
 
-        increment(xr[0],xr[1],xr[2],xr[3]);
+        increment(xr);
         System.out.println(Arrays.toString(xr));
     }
 }
-
-
 */
+
+import java.util.*;
+
+class Example {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Input no of students : ");
+        final int N = input.nextInt();
+
+        //1. Create an array to store student's marks, named "marks", size
+        int[] marks = createAnArray(N);
+
+        //2. Read and store marks [Read random number 0 to 100]
+        readMarks(marks);
+
+        //3. Find Total
+        int total = findTotal(marks);
+
+        //4. Find max
+        int max = findMax(marks);
+
+        //5. Find min
+        int min = findMin(marks);
+
+
+        //6. Print marks [45, 23,.....]
+        printMarks(marks);
+
+        System.out.println("Total   : " + total);
+        System.out.println("Maximum : " + max);
+        System.out.println("Minimum : " + min);
+    }
+
+    private static int findMin(int[] d) {
+        int minn = d[0];
+        for (int i = 1; i < d.length; i++) {
+            if (d[i] < minn) {
+                minn = d[i];
+            }
+        }
+        return minn;
+    }
+
+    public static int[] createAnArray(int n) {
+     /*   int y[]= new int[n];
+        return y;*/
+        return new int[n];
+    }
+
+    public static void readMarks(int[] marks) {
+        Random r = new Random();
+        for (int i = 0; i < marks.length; i++) {
+            marks[i] = r.nextInt(101);
+        }
+        // System.out.println(Arrays.toString(marks));
+    }
+
+    public static int findTotal(int[] b) {
+        int tot = 0;
+        for (int i = 0; i < b.length; i++) {
+            tot += b[i];
+        }
+        return tot;
+    }
+
+    public static int findMax(int[] c) {
+        int maxx = c[0];
+        for (int i = 1; i < c.length; i++) {
+            if (c[i] > maxx) {
+                maxx = c[i];
+            }
+        }
+
+        return maxx;
+    }
+    public static void printMarks(int []e){
+        System.out.println(Arrays.toString(e));
+    }
+
+}
+
+
