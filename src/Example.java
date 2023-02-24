@@ -529,6 +529,7 @@ class Example {
     }
 }*/
 
+/*
 import java.util.*;
 
 class Example {
@@ -563,4 +564,76 @@ class Example {
         return false;
     }
 }
+*/
+/*
+
+import java.util.*;
+
+class Example {
+    public static void main(String[] args) {
+        int[] ar = {54, 76, 98, 14, 25, 36, 58, 97, 94, 72, 61, 42, 63, 79};
+
+        int index;
+
+        index = searchArray(ar, 98);
+        System.out.println("Index of 98 : " + index); //2
+
+        index = searchArray(ar, 25);
+        System.out.println("Index of 25 : " + index); //4
+
+        index = searchArray(ar, 99);
+        System.out.println("Index of 99 : " + index); //-1
+
+    }
+
+    public static int searchArray(int[] a, int b) {
+        for (int i = 0; i < a.length; i++) {
+            if (a[i] == b) {
+                return i;
+            }
+        }
+        return -1;
+    }
+}
+*/
+/*
+import java.util.*;
+class Example{
+    public static void main(String []args) {
+        int[] ar={54,76,98,14,25,36,58,97,98,72,61,42,63,79};
+        System.out.println("98 is exists : "+searchArray(ar,98));  //true
+        System.out.println("99 is exists : "+searchArray(ar,99));  //false
+
+    }
+    public static boolean searchArray(int[] a, int b){
+        for (int i = 0; i < a.length ; i++) {
+            if (a[i]==b){
+                return true;
+            }
+        }
+        return false;
+    }
+}
+*/
+import java.util.*;
+class Example{
+    public static void reverseAnArray(int[] a){
+        int i=0;
+        int j=a.length-1;
+        while(i<j){
+            int temp=a[i];
+            a[i]=a[j];
+            a[j]=temp;
+            i++;
+            j--;
+        }
+    }
+    public static void main(String []args) {
+        int[] ar={54,67,98,12,43,58,91,47,29,99,61};
+        System.out.println(Arrays.toString(ar));//[54,67,98,12,43,58,91,47,29,99,61]
+        reverseAnArray(ar);
+        System.out.println(Arrays.toString(ar)); //[61,99,29,47,91,58,43,12,98,67,54]
+    }
+}
+
 
