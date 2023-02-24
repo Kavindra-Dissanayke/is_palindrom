@@ -457,30 +457,110 @@ class Example{
 //
 //}
 //
+//import java.util.*;
+//import java.util.*;
+//class Example{
+//    public static void main(String []args) {
+//        int[] ar={54,67,98,12,43,58,91,47,29,99,61};
+//        reversePrint(ar); //[61,99,29,47,91,58,43,12,98,67,54]
+//    }
+//    public static void reversePrint(int [] ar){
+//        int tempArray[]=new int[ar.length];
+// for (int i = 1; i <= ar.length ; i++) {
+//       tempArray[i-1]=ar[ar.length-i];
+//
+//   tempArray[0]=ar[ar.length-1];
+//    /*   tempArray[1]=ar[ar.length-2];
+//       tempArray[2]=ar[ar.length-3];
+//       tempArray[3]=ar[ar.length-4];
+//
+//            for (int i = 0; i < ar.length ; i++) {
+//                tempArray[i] = ar[ar.length - (i+1)];
+//            }
+//}
+//
+//        System.out.println(Arrays.toString(tempArray));
+//    System.out.println(tempArray[1]);
+//        System.out.println(tempArray[2]);
+//        System.out.println(tempArray[3]);
+//
+//    }
+//}
+
+
+/*import java.util.*;
 import java.util.*;
-import java.util.*;
-class Example{
-    public static void main(String []args) {
-        int[] ar={54,67,98,12,43,58,91,47,29,99,61};
-        reversePrint(ar); //[61,99,29,47,91,58,43,12,98,67,54]
+
+class Example {
+    public static void main(String[] args) {
+        int[] ar = {10, 20, 30, 40, 50};
+        int[] br = {1,2,3,4,5,6,7,8};
+
+        int[] cr;
+        cr = mergeTwoArrays(ar, br);
+        System.out.println(Arrays.toString(ar));//[10,20,30,40,50]
+        System.out.println(Arrays.toString(br));//[1,2,3,4,5,6,7,8]
+        System.out.println(Arrays.toString(cr));//[10,20,30,40,50,1,2,3,4,5,6,7,8]
     }
-    public static void reversePrint(int [] ar){
-        int tempArray[]=new int[ar.length];
-       /* for (int i = 1; i <= ar.length ; i++) {
-       tempArray[i-1]=ar[ar.length-i];*/
-    /*   tempArray[0]=ar[ar.length-1];
-    /*   tempArray[1]=ar[ar.length-2];
-       tempArray[2]=ar[ar.length-3];
-       tempArray[3]=ar[ar.length-4];*/
-            for (int i = 0; i < ar.length ; i++) {
-                tempArray[i] = ar[ar.length - (i+1)];
+
+    public static int[] mergeTwoArrays(int[] a, int[] b) {
+        int[] c = new int[a.length + b.length];
+        for (int i = 0; i < a.length; i++) {
+            c[i] = a[i];
+            //c[0]=a[0]
+            // c[1]=a[1]
+            // c[2]=a[2]
+            // c[3]=a[3]
+            // [4]=a[4]
+        }
+        for (int i = 0; i < b.length; i++) {
+            c[a.length + i] = b[i];
+            //c[5]=a[0] *** but this one is wrong > c[6]=c[0]>>out of bound exception c wala 13k natha,
+            // c[6]=a[1]
+            // c[7]=a[2]
+            // c[8]=a[3]
+            // c[9]=a[4]
+            // c[10]=a[5]
+            // c[11]=a[6]
+            // c[12]=a[7]
+
+        }
+        return c;
+    }
+}*/
+
+import java.util.*;
+
+class Example {
+    public static void main(String[] args) {
+        int[] ar = {10, 20, 30, 40, 50};
+        int[] br = {10, 20, 30, 40, 50};
+        int[] cr = {10, 20, 30, 40, 50, 60};
+        int[] dr = {10, 20, 30, 40};
+        int[] er = {50, 20, 40, 10, 30};
+
+        System.out.println("ar==br : " + equals(ar, br));//true
+        System.out.println("ar==cr : " + equals(ar, cr));//false
+        System.out.println("ar==dr : " + equals(ar, dr));//false
+        System.out.println("ar==er : " + equals(ar, er));//false
+    }
+
+    public static boolean equals(int[] a, int[] b) {
+        int count=0;
+        if (a.length == b.length) {
+            for (int i = 0; i < a.length; i++) {
+
+               if (a[i]==b[i]){
+                  return true;
+
+               }
+              return false;// logic here
+
+
             }
-        /*}*/
-        System.out.println(Arrays.toString(tempArray));
-    /*    System.out.println(tempArray[1]);
-        System.out.println(tempArray[2]);
-        System.out.println(tempArray[3]);*/
+
+        }
+        return false;
     }
 }
-
 
